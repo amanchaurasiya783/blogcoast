@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+        <title>Blog</title>
+</head>
+
+<body>
+    <%- include('./partials/nav') %>
+        <% console.log(blog) %>
+            <div class="container mt-3">
+                <img src="<%= blog.coverImageURL %>" />
+                <div class="container">
+                    <%= blog.title %>
+                </div>
+                <div class="container">
+                    <%= blog.body %>
+                </div>
+            </div>
+            <%- include('./partials/script') %>
+</body>
+
+</html>
